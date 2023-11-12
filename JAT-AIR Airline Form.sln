@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JAT-AIR Airline Form", "JAT-AIR Airline Form.csproj", "{920784EA-4E59-4BE0-BFC3-CD6EFD234E39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{920784EA-4E59-4BE0-BFC3-CD6EFD234E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920784EA-4E59-4BE0-BFC3-CD6EFD234E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920784EA-4E59-4BE0-BFC3-CD6EFD234E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920784EA-4E59-4BE0-BFC3-CD6EFD234E39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAA6129E-8CD4-4E23-B296-4FA8AFF13E0F}
+	EndGlobalSection
+EndGlobal
