@@ -97,6 +97,7 @@
 			SeatingPreferenceComboBox.FormattingEnabled = true;
 			SeatingPreferenceComboBox.Items.AddRange(new object[] { resources.GetString("SeatingPreferenceComboBox.Items"), resources.GetString("SeatingPreferenceComboBox.Items1"), resources.GetString("SeatingPreferenceComboBox.Items2") });
 			SeatingPreferenceComboBox.Name = "SeatingPreferenceComboBox";
+			SeatingPreferenceComboBox.SelectedIndexChanged += SeatingPreferenceComboBox_SelectedIndexChanged;
 			// 
 			// FlightDatePicker
 			// 
@@ -122,6 +123,7 @@
 			// 
 			resources.ApplyResources(QuitButton, "QuitButton");
 			QuitButton.BackColor = Color.Fuchsia;
+			QuitButton.Cursor = Cursors.Hand;
 			QuitButton.Name = "QuitButton";
 			QuitButton.UseVisualStyleBackColor = false;
 			QuitButton.Click += QuitButton_Click;
@@ -136,6 +138,7 @@
 			// 
 			resources.ApplyResources(ReservationInfo, "ReservationInfo");
 			ReservationInfo.BackColor = Color.Gold;
+			ReservationInfo.Cursor = Cursors.AppStarting;
 			ReservationInfo.Name = "ReservationInfo";
 			ReservationInfo.UseVisualStyleBackColor = false;
 			ReservationInfo.Click += ReservationInfo_Click;
@@ -170,6 +173,7 @@
 			// 
 			resources.ApplyResources(SaveInfo, "SaveInfo");
 			SaveInfo.BackColor = Color.Lime;
+			SaveInfo.Cursor = Cursors.Hand;
 			SaveInfo.Name = "SaveInfo";
 			SaveInfo.UseVisualStyleBackColor = false;
 			SaveInfo.Click += SaveInfo_Click;
@@ -178,6 +182,7 @@
 			// 
 			resources.ApplyResources(DeleteButton, "DeleteButton");
 			DeleteButton.BackColor = Color.SlateBlue;
+			DeleteButton.Cursor = Cursors.Hand;
 			DeleteButton.Name = "DeleteButton";
 			DeleteButton.UseVisualStyleBackColor = false;
 			DeleteButton.Click += DeleteButton_Click;
@@ -195,6 +200,7 @@
 			pictureBox2.Image = Properties.Resources.final_dl_beatsnoop_com_2esDP5cb78;
 			pictureBox2.Name = "pictureBox2";
 			pictureBox2.TabStop = false;
+			pictureBox2.Click += pictureBox2_Click_1;
 			// 
 			// Form2
 			// 

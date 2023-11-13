@@ -44,6 +44,8 @@ namespace JAT_AIR_Airline_Form
 		{
 
 		}
+
+		//Login Button 
 		private void LoginButton_Click(object sender, EventArgs e)
 		{
 			try
@@ -55,7 +57,7 @@ namespace JAT_AIR_Airline_Form
 				conn.Open();
 				if (cmd.ExecuteScalar().ToString() == "1")
 				{
-					MessageBox.Show("YOU ARE GRANTED ACCESS!");
+					MessageBox.Show("Welcome back, " + UsernameTextBox.Text + " you are logged in.");
 					this.Hide();
 
 					Form2 f2 = new Form2();
@@ -63,7 +65,7 @@ namespace JAT_AIR_Airline_Form
 				}
 				else
 				{
-					MessageBox.Show("YOU ARE NOT GRANTED ACCESS!");
+					MessageBox.Show("Incorrect Username or Password, Try again!");
 					UsernameTextBox.Clear();
 					PasswordTextBox.Clear();
 				}
@@ -75,7 +77,7 @@ namespace JAT_AIR_Airline_Form
 			}
 
 		}
-
+		//The Exit Button
 		private void ExitButton_Click(object sender, EventArgs e)
 		{
 			DialogResult confirm = MessageBox.Show("Are you sure you want to exit?", "Exit	Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

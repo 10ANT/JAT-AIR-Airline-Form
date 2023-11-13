@@ -153,6 +153,16 @@ namespace JAT_AIR_Airline_Form.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap final_dl_beatsnoop4 {
+            get {
+                object obj = ResourceManager.GetObject("final-dl.beatsnoop4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GettyImages_1153881562 {
             get {
                 object obj = ResourceManager.GetObject("GettyImages-1153881562", resourceCulture);

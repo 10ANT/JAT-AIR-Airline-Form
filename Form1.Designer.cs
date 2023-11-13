@@ -59,7 +59,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.BackColor = Color.White;
+			label1.BackColor = Color.WhiteSmoke;
 			label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
 			label1.Location = new Point(360, 108);
 			label1.Name = "label1";
@@ -81,6 +81,7 @@
 			// 
 			// UsernameTextBox
 			// 
+			UsernameTextBox.ForeColor = SystemColors.InfoText;
 			UsernameTextBox.Location = new Point(495, 108);
 			UsernameTextBox.Name = "UsernameTextBox";
 			UsernameTextBox.Size = new Size(191, 27);
@@ -89,6 +90,7 @@
 			// 
 			// PasswordTextBox
 			// 
+			PasswordTextBox.ForeColor = SystemColors.InfoText;
 			PasswordTextBox.Location = new Point(495, 173);
 			PasswordTextBox.Name = "PasswordTextBox";
 			PasswordTextBox.Size = new Size(191, 27);
@@ -156,7 +158,7 @@
 			label4.AutoSize = true;
 			label4.BackColor = SystemColors.ButtonHighlight;
 			label4.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point);
-			label4.Location = new Point(127, 254);
+			label4.Location = new Point(142, 254);
 			label4.Name = "label4";
 			label4.Size = new Size(83, 36);
 			label4.TabIndex = 10;
@@ -180,7 +182,7 @@
 			Controls.Add(pictureBox2);
 			Controls.Add(pictureBox3);
 			Name = "Login";
-			Text = "Form1";
+			Text = "JAT Airlines Login Form";
 			Load += Form1_Load;
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

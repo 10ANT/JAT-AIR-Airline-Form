@@ -23,7 +23,7 @@ namespace JAT_AIR_Airline_Form
 		SqlCommand cmd;
 		SqlCommand checkFullCmd;
 		SqlCommand checkDupes;
-
+		//Constructor
 		public Form2()
 		{
 			InitializeComponent();
@@ -64,12 +64,12 @@ namespace JAT_AIR_Airline_Form
 			{
 				///Console.WriteLine(LastNameTextBox.Text.ToString());
 				///
-				//Checks if Flight is at capacity i for testing purposes set atCapacity at 1 to demonstrate error
+				//Checks if Flight is at capacity for testing purposes set atCapacity at 1 to demonstrate error
 				checkFullCmd = new SqlCommand("SELECT CASE WHEN COUNT(*) >= 200 THEN 1 ELSE 0 END FROM ReservedPassengerInfoTable WHERE seating_num BETWEEN 1 AND 200", con);
 
 				con.Open();
 				int atCapacity = Convert.ToInt32(checkFullCmd.ExecuteScalar());
-				atCapacity = 0;
+				///atCapacity = 1;
 				con.Close();
 
 				if (atCapacity == 1)
@@ -115,10 +115,6 @@ namespace JAT_AIR_Airline_Form
 					}
 				}
 
-
-
-
-
 				//used to insert passenger record into data base
 				cmd = new SqlCommand("insert into ReservedPassengerInfoTable(passenger_firstname,passenger_lastname,destination,flight_date,seating_preference,seating_num) " +
 						"values(@passen_fname, @passen_lname, @passen_destin, @passenf_date, @seat_pref, @seat_number)", con);
@@ -131,7 +127,8 @@ namespace JAT_AIR_Airline_Form
 				cmd.Parameters.AddWithValue("@seat_number", SeatingNumberTextBox.Text);
 				cmd.ExecuteNonQuery();
 				con.Close();
-				MessageBox.Show("Record Inserted Successfully");
+				MessageBox.Show("Record Inserted Successfully, Reservation Made");
+				//Enabling several form controls after save button is clicked successfully
 				DeleteButton.Enabled = true;
 				ReservationInfo.Enabled = true;
 				ArrowPointing.Enabled = true;
@@ -154,9 +151,6 @@ namespace JAT_AIR_Airline_Form
 		{
 
 		}
-
-
-
 
 
 		private void DeleteButton_Click(object sender, EventArgs e)
@@ -237,6 +231,8 @@ namespace JAT_AIR_Airline_Form
 
 		}
 
+
+		//Reservation Button is Used to Perform Several Calculations and assign value to fields
 		private void ReservationInfo_Click(object sender, EventArgs e)
 		{
 			try
@@ -290,6 +286,7 @@ namespace JAT_AIR_Airline_Form
 
 		}
 
+
 		private void ArrowPointing_Click(object sender, EventArgs e)
 		{
 
@@ -301,6 +298,16 @@ namespace JAT_AIR_Airline_Form
 		}
 
 		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void SeatingPreferenceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pictureBox2_Click_1(object sender, EventArgs e)
 		{
 
 		}

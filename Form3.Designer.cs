@@ -54,6 +54,7 @@
 			ShowRecord = new Button();
 			dataGridView1 = new DataGridView();
 			pictureBox5 = new PictureBox();
+			button1 = new Button();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -66,7 +67,7 @@
 			label1.AutoSize = true;
 			label1.BackColor = SystemColors.Info;
 			label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-			label1.Location = new Point(245, 41);
+			label1.Location = new Point(314, 53);
 			label1.Name = "label1";
 			label1.Size = new Size(452, 31);
 			label1.TabIndex = 0;
@@ -138,7 +139,7 @@
 			// 
 			label7.AutoSize = true;
 			label7.Font = new Font("Yu Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-			label7.Location = new Point(88, 528);
+			label7.Location = new Point(169, 494);
 			label7.Name = "label7";
 			label7.Size = new Size(557, 22);
 			label7.TabIndex = 7;
@@ -175,6 +176,7 @@
 			label9.Size = new Size(188, 20);
 			label9.TabIndex = 10;
 			label9.Text = "Total ticket cost before tax:";
+			label9.Click += label9_Click;
 			// 
 			// label10
 			// 
@@ -190,7 +192,7 @@
 			// pictureBox2
 			// 
 			pictureBox2.Image = Properties.Resources.thank_you;
-			pictureBox2.Location = new Point(679, 501);
+			pictureBox2.Location = new Point(415, 546);
 			pictureBox2.Name = "pictureBox2";
 			pictureBox2.Size = new Size(159, 89);
 			pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -314,16 +316,29 @@
 			pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
 			pictureBox5.Location = new Point(0, 0);
 			pictureBox5.Name = "pictureBox5";
-			pictureBox5.Size = new Size(909, 617);
+			pictureBox5.Size = new Size(909, 647);
 			pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox5.TabIndex = 25;
 			pictureBox5.TabStop = false;
+			// 
+			// button1
+			// 
+			button1.BackColor = Color.Silver;
+			button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+			button1.Location = new Point(763, 491);
+			button1.Name = "button1";
+			button1.Size = new Size(94, 29);
+			button1.TabIndex = 26;
+			button1.Text = "Quit";
+			button1.UseVisualStyleBackColor = false;
+			button1.Click += button1_Click;
 			// 
 			// Form3
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(909, 617);
+			ClientSize = new Size(909, 647);
+			Controls.Add(button1);
 			Controls.Add(dataGridView1);
 			Controls.Add(ShowRecord);
 			Controls.Add(TotalTicketCostAfterTax);
@@ -388,5 +403,6 @@
 		private Button ShowRecord;
 		private DataGridView dataGridView1;
 		private PictureBox pictureBox5;
+		private Button button1;
 	}
 }
